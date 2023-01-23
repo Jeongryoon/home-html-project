@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>브라우저 탭ㅔ 보는 제목</title>
+
+    </head>
+    <body>
+        <input
+            id="butto-1"
+            type="button"
+            value="button-1"
+        />
+        <input
+            id="textbox-1"
+            type="text"
+            value="button-1"
+        />
+
+        
+    </body>
+    <script>
+        document.getElementById('butto-1').onmouseenter = () => {
+            alert('안녕하세요');
+        }
+        document.getElementById('textbox-1').onchange = (event) => {
+            console.log(event.target.value)
+        }
+
+   
+    </script>
+
+</html>

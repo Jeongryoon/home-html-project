@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>브라우저 탭ㅔ 보는 제목</title>
+
+    </head>
+    <body>
+        <div id="div-1" onclick="alert('div-1 태그입니다')">div-1 태그</div>
+        <input
+            id="butto-1"
+            type="button"
+            value="button-1"
+            onclick="alert('button-1 버튼입니다')"
+        />
+
+        <div id="div-2">div-2 태그</div>
+        <input
+            id="button-2"
+            type="button"
+            value="button-2"
+        />
+
+        
+    </body>
+    <script>
+        document.getElementById('div-2').onclick = () => {
+            alert('div-2 태그입니다.')
+        }
+
+        document.getElementById('button-2').onclick = () => {
+            alert('button-2 태그입니다.')
+        }
+    </script>
+
+</html>
